@@ -96,7 +96,7 @@ document.querySelector('form.formGetID').addEventListener('submit', function(e) 
         let myDiv = document.getElementById("todosID");
         myDiv.appendChild(para);
     } else {
-      console.log(`got to here`);
+      
       console.log(`Handle Error!`);
     }
   };
