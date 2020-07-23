@@ -58,11 +58,6 @@ function postTodo() {
 }
 
 
-
-
-
-
-
 document.querySelector('form.form').addEventListener('submit', function(stop) {
   stop.preventDefault();
   let x = document.querySelector('form.form').elements;
@@ -101,6 +96,7 @@ document.querySelector('form.formGetID').addEventListener('submit', function(e) 
         let myDiv = document.getElementById("todosID");
         myDiv.appendChild(para);
     } else {
+      console.log(`got to here`);
       console.log(`Handle Error!`);
     }
   };
