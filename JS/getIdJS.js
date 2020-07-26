@@ -1,3 +1,4 @@
+// Http request
 const REQ = new XMLHttpRequest();
 
 document.querySelector('form.formGetID').addEventListener('submit', function(e) {
@@ -37,19 +38,6 @@ document.querySelector('form.formGetID').addEventListener('submit', function(e) 
   REQ.setRequestHeader("Access-Control-Allow-Origin", "*");
   REQ.responseType = "json";
   REQ.send();
-});
-
-fetch('http://jsonplaceholder.typicode.com/todos')
-.then(
-  function(response) {
-    if (response.status !== 200) {
-      console.log('Looks like there was a problem. Status Code: ' + response.status);
-      return;
-    }
-  }
-)
-.catch(function(err) {
-  console.log('Fetch Error :-S', err);
 });
 
 

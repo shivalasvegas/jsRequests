@@ -13,9 +13,7 @@
   <body>
     <div class="container">
       <br>
-      <h1>xmlHttpRequests:: Get and Post</h1>
-      <div class="alert alert-primary" id="resp"></div>
-
+      <h3>xmlHttpRequests:: Get and Post</h3>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,14 +36,19 @@
             </ul>
           </div>
         </nav>
-
+        <br><br>
+        
         <button id="butt1" onclick="getTodos()" class="btn btn-outline-primary">GET me</button>
         <button id="butt2" onclick="postTodo()" class="btn btn-outline-danger" >POST me</button>
-        <h3>Data will come here:</h3>
+        <br><br>
+        <div class="alert alert-primary" id="resp"></div>
+        
+        <h4>Data:</h4>
+        <br>
         <div id=todos></div>
     
 
-        <script src="/JS/JS.js"></script>
+        <script src="/JS/getAndPostJS_fetch.js"></script>
   
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

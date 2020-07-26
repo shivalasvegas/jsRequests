@@ -1,3 +1,4 @@
+//Http request
 const REQ = new XMLHttpRequest();
 
 function getTodos() {
@@ -58,32 +59,6 @@ function postTodo() {
 }
 
 
-fetch('http://jsonplaceholder.typicode.com/todos')
-.then(
-  function(response) {
-    if (response.status !== 200) {
-      console.log('Looks like there was a problem. Status Code: ' +
-        response.status);
-      return;
-    }
-
-    // Examine the text in the response
-    response.json().then(function(data) {
-      console.log(data);
-      for (let i = 0; i < 200; i++) {
-        document.querySelector("#resp").innerHTML = data[i].id;
-        console.log((document.querySelector("#resp").innerHTML = data[i].userId));
-        console.log((document.querySelector("#resp").innerHTML = data[i].title));
-        console.log((document.querySelector("#resp").innerHTML =data[i].completed));
-        console.log((document.querySelector("#resp").innerHTML =data[i].completed)
-        );
-      }
-    });
-  }
-)
-.catch(function(err) {
-  console.log('Fetch Error :-S', err);
-});
 
 
 

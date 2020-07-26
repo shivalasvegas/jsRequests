@@ -1,5 +1,5 @@
 const REQ = new XMLHttpRequest();
-
+// httprequest
 function getTodos() {
   REQ.onload = () => {
     if (REQ.status === 200) {
@@ -109,7 +109,7 @@ document.querySelector('form.formGetID').addEventListener('submit', function(e) 
 
 
 
-
+/// fetch method
 fetch('http://jsonplaceholder.typicode.com/todos')
 .then(
   function(response) {
@@ -119,7 +119,7 @@ fetch('http://jsonplaceholder.typicode.com/todos')
       return;
     }
 
-    // Examine the text in the response
+    // Examine the text in the response /// fetch
     response.json().then(function(data) {
       console.log(data);
       for (let i = 0; i < 200; i++) {
